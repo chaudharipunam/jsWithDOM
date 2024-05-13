@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            display: inline-block;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>  <!--Hello-->
+        <div id="oneBox" class="box">Box3</div>
+        <!--Hi--><div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Poonam</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Rutu</td>
+            <td>21</td>
+        </tr>
+        </tbody>
+        <tr>
+            <td>Seema</td>
+            <td>age</td>
+        </tr>
+    </table>
+    <!-- <script>
+        document.title="DOM";
+        console.log(document.body);
+        // console.log(document.title);
+    </script> -->
+    <script>
+        // let accessBody=document.body;    or we can write like this also
+        // let accessBody=document.body.childNodes;
+   // if we have to access the body by using document object for that we can write like this
+        // console.log(accessInBody);
+
+        // let accessInsideBody=document.body.childNodes[0];
+        // console.log(accessInsideBody);        //if we have access inside body particular element by using indexing
+        
+        // let accessGandChild=document.body.childNodes[1].childNodes;
+        // console.log(accessGandChild);   //use for go to inside of child of body
+       
+        // let accessfirstchildChild=document.body.childNodes[1].firstChild;
+        // console.log(accessfirstchildChild);   // access to the first child of child of body as same as we can also do with lastChild
+
+        // let accesFirsElemchilChildBody=document.body.childNodes[1].firstElementChild;
+        // console.log(accesFirsElemchilChildBody);  //access to the first element child of child of body
+
+        // let styleLastElemchilChildBody=document.body.childNodes[1].lastElementChild.style.backgroundColor="pink";
+        // console.log(styleLastElemchilChildBody);
+
+    //     let acessparentFromChild=document.body.childNodes[1].lastChild.parentElement;
+    //     console.log(acessparentFromChild);    //we can access to parent from child
+
+    // let way2toacessAllOnlyElementChild=document.body.firstElementChild.children;
+    // console.log(way2toacessAllOnlyElementChild); 
+
+    // difference betweem Nodeslist & HTMLcollection
+    // Nodeslist-whole nodes will print what is in container 
+    // HTMLcollection-it only print HTML elements
+
+    // let way2toacessAllOnlyElementparticularChild=document.body.firstElementChild.children[3];
+    // console.log(way2toacessAllOnlyElementparticularChild); 
+
+    // let nextEleSiblings=document.body.firstElementChild.children[3].nextElementSibling;
+    // console.log(nextEleSiblings);
+
+    // let preEleSiblings=document.body.firstElementChild.children[2].previousElementSibling;
+    // console.log(preEleSiblings);
+
+    // let nextSiblings=document.body.firstElementChild.children[3].nextSibling;
+    // console.log(nextSiblings);
+
+    // let preSiblings=document.body.firstElementChild.children[3].previousSibling;
+    // console.log(preSiblings);
+
+    // let nextsibNextsib = document.body.firstElementChild.children[1].nextSibling.nextSibling;
+    // console.log(nextsibNextsib);
+
+
+    // if i have to access to the row of table 
+    // let accessRow=document.body.children[1].rows;
+    // console.log(accessRow);
+
+    // if i have to access to the thead part of table 
+    // let accessThead=document.body.children[1].tHead;
+    // console.log(accessThead);     as same as we can find the tFoot & tBodies  & can access caption too
+
+    // this is for access to tBodies 
+    // let acesstBodies=document.body.children[1].tBodies;
+    // console.log(acesstBodies);
+
+    // 2 ways for accessing to the script tag 
+    // 1st way 
+    // let accessScriptTag=document.body.children[1].nextElementSibling;
+    // console.log(accessScriptTag);
+
+    // 2nd way
+    // let accessScriptTag=document.body.children[2];
+    // console.log(accessScriptTag);
+
+    // access that all boxes which have same classname by using "getElementsByClassname" method
+    // let accessAllBoxes= document.getElementsByClassName("box");
+    // console.log(accessAllBoxes);
+
+    // style to the content by using "getElementById" method
+    // let accessboxById=document.getElementById("oneBox");
+    // let styleContentById=accessboxById.style.backgroundColor="pink";
+    // console.log(styleContentById);
+
+    // querySelector= 1. in this method we can use both like classname (.classname) & Idname (#Idname) also
+    //                2. it's only use for first child/ element
+    let useQuerySelector=
+    </script>
+</body>
+</html>
