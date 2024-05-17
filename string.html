@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter the Text" id="input">
+    <button id="btn">Reverse word by word</button>
+
+    <script>
+        inputName(){
+
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Words</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter the Text" id="input">
+    <button id="btn">Reverse word by word</button>
+    <p id="output"></p>
+
+    <script>
+
+        let button=document.getElementById("btn");
+        let Input= document.getElementById("input");
+
+        button.addEventListener("click", function() {
+            let inputText =Input.value;
+            let reversedText = reverseWords(inputText);
+            document.getElementById("output").textContent = reversedText;
+        });
+
+        function reverseWords(str) {
+            return str.split('').reverse().join('');
+        }
+      
+    </script>
+</body>
+</html>
